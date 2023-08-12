@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Permission Set</label>
+    <protected>false</protected>
+    <values>
+        <field>Apex_Class__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Custom_Permission__c</field>
+        <value xsi:type="xsd:string">Go_Router_Admin_Route_Access</value>
+    </values>
+    <values>
+        <field>Entity__c</field>
+        <value xsi:type="xsd:string">PermissionSet</value>
+    </values>
+    <values>
+        <field>Input__c</field>
+        <value xsi:type="xsd:string">Name | Label (Full or Partial)</value>
+    </values>
+    <values>
+        <field>Is_Default_Router__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Is_Setup_Record__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>Key__c</field>
+        <value xsi:type="xsd:string">ps</value>
+    </values>
+    <values>
+        <field>Like_Query__c</field>
+        <value xsi:type="xsd:string">Name LIKE :likeParam OR Label LIKE :likeParam</value>
+    </values>
+    <values>
+        <field>Query__c</field>
+        <value xsi:type="xsd:string">Name = :param OR Label = :param</value>
+    </values>
+    <values>
+        <field>Record_Page__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Redirect_Path_With_Param__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Redirect_Path__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Type__c</field>
+        <value xsi:type="xsd:string">Record</value>
+    </values>
+    <values>
+        <field>Usage__c</field>
+        <value xsi:type="xsd:string">Lookup to Permission Set</value>
+    </values>
+</CustomMetadata>

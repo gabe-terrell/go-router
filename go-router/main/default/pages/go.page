@@ -1,0 +1,28 @@
+<apex:page
+  controller="GoController"
+  action="{!go}"
+  title="Go"
+  lightningStylesheets="true"
+>
+  <apex:form>
+    <apex:pageBlock title="Salesforce Go">
+      <apex:pageBlockSection columns="1">
+        <apex:pageBlockSectionItem>
+          <apex:inputText value="{!query}" style="width: 300px; float: left" />
+          <apex:commandButton value="Go" action="{!goInput}" />
+        </apex:pageBlockSectionItem>
+      </apex:pageBlockSection>
+    </apex:pageBlock>
+    <apex:pageBlock title="Documentation">
+      <apex:pageBlockTable value="{!routes}" var="route">
+        <apex:column headerValue="Key" value="{!route.key}" colspan="1" />
+        <apex:column headerValue="Input" value="{!route.input}" colspan="1" />
+        <apex:column
+          headerValue="Description"
+          value="{!route.usage}"
+          colspan="2"
+        />
+      </apex:pageBlockTable>
+    </apex:pageBlock>
+  </apex:form>
+</apex:page>

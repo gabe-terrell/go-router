@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permission Set granting access to all fields and records for Go_Router_Log__c entries</description>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Go_Router_Log__c.Input__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Go_Router_Log__c.Matched_On_Input__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>View All Go Router Logs</label>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Go_Router_Log__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+</PermissionSet>

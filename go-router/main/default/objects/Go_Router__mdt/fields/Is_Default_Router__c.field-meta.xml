@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Default_Router__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Specifies if this router should be utilized if no explicit route is provided. Only one router should have a value of true.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Specifies if this router should be utilized if no explicit route is provided. Only one router should have a value of true.</inlineHelpText>
+    <label>Is Default Router?</label>
+    <type>Checkbox</type>
+</CustomField>

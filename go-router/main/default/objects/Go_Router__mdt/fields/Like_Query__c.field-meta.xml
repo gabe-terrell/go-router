@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Like_Query__c</fullName>
+    <description>
+        The fallback query used to lookup the record with a LIKE wildcard. Available binding variables:
+        - :likeParam (%param%)
+        - :startsQuery (param%)
+        - :endsQuery (%param)
+    </description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>
+        The fallback query used to lookup the record with a LIKE wildcard. Available binding variables:
+        - :likeParam (%param%)
+        - :startsQuery (param%)
+        - :endsQuery (%param)
+    </inlineHelpText>
+    <label>Like Query</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

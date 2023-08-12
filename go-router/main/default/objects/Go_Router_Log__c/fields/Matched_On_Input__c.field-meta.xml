@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Matched_On_Input__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Checkbox determining if Go Router found a match based on input provided</description>
+    <externalId>false</externalId>
+    <label>Matched On Input?</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

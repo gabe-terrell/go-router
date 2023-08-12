@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Redirect_Required_Fields</fullName>
+    <active>true</active>
+    <description>Enforce fields for Redirect Type Routers</description>
+    <errorConditionFormula>AND(
+  ISPICKVAL(Type__c, &#39;Redirect&#39;),
+  ISBLANK(Redirect_Path__c)
+)</errorConditionFormula>
+    <errorMessage>Redirect Routers must supply a redirect path.</errorMessage>
+</ValidationRule>

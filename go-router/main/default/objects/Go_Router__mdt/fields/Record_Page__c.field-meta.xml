@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Record_Page__c</fullName>
+    <description>Overwrites the default record page to route the located record. Use &quot;{0}&quot; in the specified URL to inject the Id of the record into the URL. The default record page if left blank is: /{0}</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Overwrites the default record page to route the located record. Use &quot;{0}&quot; in the specified URL to inject the Id of the record into the URL. The default record page if left blank is: /{0}</inlineHelpText>
+    <label>Record Page</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

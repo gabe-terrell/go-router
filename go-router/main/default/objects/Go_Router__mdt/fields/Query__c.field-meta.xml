@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Query__c</fullName>
+    <description>
+        The WHERE clause of a SOQL query used to find the record:
+        - Use :param to pass in the String input
+        - Use :paramAsNumber to pass in the input cast as a Double
+    </description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>
+        The WHERE clause of a SOQL query used to find the record:
+        - Use :param to pass in the String input
+        - Use :paramAsNumber to pass in the input cast as a Double
+    </inlineHelpText>
+    <label>Query</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

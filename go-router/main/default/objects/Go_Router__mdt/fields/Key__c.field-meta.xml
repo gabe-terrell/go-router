@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Key__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>The route exposed for this GoRouter (i.e. /apex/go/key =&gt; activates this router).</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>The route exposed for this GoRouter (i.e. /apex/go/key =&gt; activates this router).</inlineHelpText>
+    <label>Key</label>
+    <length>25</length>
+    <required>true</required>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Record_Routers</fullName>
+    <columns>MasterLabel</columns>
+    <columns>Key__c</columns>
+    <columns>Entity__c</columns>
+    <columns>Input__c</columns>
+    <columns>Query__c</columns>
+    <columns>Is_Setup_Record__c</columns>
+    <columns>Custom_Permission__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Type__c</field>
+        <operation>equals</operation>
+        <value>Record</value>
+    </filters>
+    <label>Record Routers</label>
+    <language>en_US</language>
+</ListView>

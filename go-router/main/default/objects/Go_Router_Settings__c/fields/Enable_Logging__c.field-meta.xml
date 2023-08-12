@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enable_Logging__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If enabled, each usage of Go Router will be logged.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If enabled, each usage of Go Router will be logged.</inlineHelpText>
+    <label>Enable Logging?</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

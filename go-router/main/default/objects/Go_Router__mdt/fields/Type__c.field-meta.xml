@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <description>
+        The type of router:
+        - Redirect: Redirects to an internal Salesforce page
+        - Record: Searches for a particular Salesforce record using a passed in parameter and query
+        - Apex: Utilizes a custom Apex class to perform routing based on a passed in parameter
+    </description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>
+        The type of router:
+        - Redirect: Redirects to an internal Salesforce page
+        - Record: Searches for a particular Salesforce record using a passed in parameter and query
+        - Apex: Utilizes a custom Apex class to perform routing based on a passed in parameter
+    </inlineHelpText>
+    <label>Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Redirect</fullName>
+                <default>true</default>
+                <label>Redirect</label>
+            </value>
+            <value>
+                <fullName>Record</fullName>
+                <default>false</default>
+                <label>Record</label>
+            </value>
+            <value>
+                <fullName>Apex</fullName>
+                <default>false</default>
+                <label>Apex</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

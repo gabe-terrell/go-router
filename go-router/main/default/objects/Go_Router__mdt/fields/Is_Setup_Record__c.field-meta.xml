@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Setup_Record__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Specifies if the record is a type found within the Setup menu. Used for redirecting to the proper page.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Specifies if the record is a type found within the Setup menu. Used for redirecting to the proper page.</inlineHelpText>
+    <label>Is Setup Record?</label>
+    <type>Checkbox</type>
+</CustomField>

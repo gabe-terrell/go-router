@@ -8,15 +8,14 @@ Salesforce instance.
 
 The framework supports easily creating aliases to specific pages, looking up
 records based on a keyword, and creating custom Apex classes to support more
-complex routing. Take these examples for our QA instance:
+complex routing.
 
-Each route can be hidden behind a custom permission, so that standard users can
-see go-links to Case and Contact pages while Developers can have access to a
-wider variety of links to aid in development or debugging.
+Each route can be hidden behind a custom permission, allowing segementation of
+links to only the right users that should be able to access them.
 
 Not only can go-links be defined, but the query URL can also be registered as a
-search engine into Google Chrome to quickly navigate to any page of a Salesforce
-instance with only a few key strokes!
+search engine into internet browsers to quickly navigate to any page of a
+Salesforce instance with only a few key strokes!
 
 ## Defining Routers
 

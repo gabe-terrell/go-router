@@ -86,7 +86,7 @@ public without sharing class GoRouterId extends GoRouter {
       }
       // Profile
       when '00e' {
-        return '/lightning/setup/Profiles/page?address=%2F{0}';
+        return '/lightning/setup/EnhancedProfiles/page?address=%2F{0}';
       }
       // UserRole
       when '00E' {

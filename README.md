@@ -9,7 +9,7 @@ Do you find clicking around Salesforce to be slow and tedious? **Imagine if you 
 - Perform common quick operations for objects such as list or new
 - Jump to any page in the setup menu or the developer console
 - Navigate to any commonly used custom page or tab in your org
-- Intelligently navigate to startup objects when given their IDs
+- Intelligently navigate to setup objects when given their IDs
 
 Simply type the command into your browser:
 

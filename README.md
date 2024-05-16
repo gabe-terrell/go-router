@@ -176,7 +176,7 @@ CaseNumber where the leading zeros have been removed.
 ## Apex Routers
 
 For routers requiring more complex logic, an Apex class that extends GoRouter
-can be created. The class simply needs to extend the `String route(String
+can be created. The class simply needs to override the `String route(String
 param)` method and return a relative URL to the page it should route to.
 
 An example of a simple use case is defining a router for handling the default

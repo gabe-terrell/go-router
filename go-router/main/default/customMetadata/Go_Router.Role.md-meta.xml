@@ -15,6 +15,10 @@
         <value xsi:type="xsd:string">UserRole</value>
     </values>
     <values>
+        <field>Group__c</field>
+        <value xsi:type="xsd:string">Admin Routes</value>
+    </values>
+    <values>
         <field>Input__c</field>
         <value xsi:type="xsd:string">Name | DeveloperName(Full or Partial)</value>
     </values>
@@ -32,13 +36,17 @@
     </values>
     <values>
         <field>Like_Query__c</field>
-        <value xsi:type="xsd:string">Name LIKE :likeParam
-OR DeveloperName LIKE :likeParam</value>
+        <value xsi:type="xsd:string">
+            Name LIKE :likeParam
+            OR DeveloperName LIKE :likeParam
+        </value>
     </values>
     <values>
         <field>Query__c</field>
-        <value xsi:type="xsd:string">Name = :param
-OR DeveloperName = :param</value>
+        <value xsi:type="xsd:string">
+            Name = :param
+            OR DeveloperName = :param
+        </value>
     </values>
     <values>
         <field>Record_Page__c</field>

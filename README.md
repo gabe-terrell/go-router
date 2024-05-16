@@ -47,9 +47,9 @@ easily build routes straight from the setup menu for any use case in their insta
 </a>
 
 
-[Unlocked Package Installation (Production)](https://login.salesforce.com/packaging/installPackage.apexp?p0=)
+[Unlocked Package Installation (Production)](https://login.salesforce.com/packaging/installPackage.apexp?p0=04taj0000001L8rAAE)
 
-[Unlocked Package Installation (Sandbox)](https://test.salesforce.com/packaging/installPackage.apexp?p0=)
+[Unlocked Package Installation (Sandbox)](https://test.salesforce.com/packaging/installPackage.apexp?p0=04taj0000001L8rAAE)
 
 > [!WARNING]
 > When installing the package, there is a custom permission, `Go_Router_Admin_Route_Access`, that may be auto-assigned to profiles that the package is installed for. This custom permission grants access to admin-specific routes such as Developer Console or Profile search. As such, it is recommended to "install for admins only" or "install for specific profiles" in order to ensure that only those profiles get access to the admin-specific routes. Afterwards, it is easy to enable access to other users through either the provided `Go Router - Basic Access` permission set or manually enabling access to the `go` tab:

@@ -81,6 +81,8 @@ public without sharing class GoRouterSetup extends GoRouter {
     'laps' => 'LoginAccessPolicies',
     'livechatbuttons' => 'LiveChatButtonSettings',
     'livechatdeployments' => 'LiveChatDeploymentSettings',
+    'loginaccesspolicies' => 'LoginAccessPolicies',
+    'loginaccess' => 'LoginAccessPolicies',
     'logs' => 'ApexDebugLogs',
     'lwcs' => 'LightningComponentBundles',
     'matching' => 'MatchingRules',

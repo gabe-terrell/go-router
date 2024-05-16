@@ -4,7 +4,7 @@
     <active>true</active>
     <description>Enforce fields for Apex Type Routers</description>
     <errorConditionFormula>AND(
-  ISPICKVAL(Type__c, &#39;Apex&#39;),
+  ISPICKVAL(Type__c, &apos;Apex&apos;),
   ISBLANK(Apex_Class__c)
 )</errorConditionFormula>
     <errorMessage>Apex Routers must supply the Apex Class field.</errorMessage>

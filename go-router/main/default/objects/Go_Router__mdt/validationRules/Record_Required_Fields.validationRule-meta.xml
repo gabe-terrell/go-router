@@ -4,7 +4,7 @@
     <active>true</active>
     <description>Enforce fields for Record Type Routers</description>
     <errorConditionFormula>AND(
-  ISPICKVAL(Type__c, &#39;Record&#39;),
+  ISPICKVAL(Type__c, &apos;Record&apos;),
   OR(
     ISBLANK(Entity__c),
     AND(

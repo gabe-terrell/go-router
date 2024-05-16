@@ -5,7 +5,7 @@
   lightningStylesheets="true"
 >
   <apex:form>
-    <apex:pageBlock title="Salesforce Go">
+    <apex:pageBlock title="Salesforce Go!">
       <apex:pageBlockSection columns="1">
         <apex:pageBlockSectionItem>
           <apex:inputText value="{!query}" style="width: 300px; float: left" />
@@ -13,16 +13,18 @@
         </apex:pageBlockSectionItem>
       </apex:pageBlockSection>
     </apex:pageBlock>
-    <apex:pageBlock title="Documentation">
-      <apex:pageBlockTable value="{!routes}" var="route">
-        <apex:column headerValue="Key" value="{!route.key}" colspan="1" />
-        <apex:column headerValue="Input" value="{!route.input}" colspan="1" />
-        <apex:column
-          headerValue="Description"
-          value="{!route.usage}"
-          colspan="2"
-        />
-      </apex:pageBlockTable>
-    </apex:pageBlock>
+    <apex:repeat value="{!routes}" var="routeGroup">
+      <apex:pageBlock title="{!routeGroup.name}">
+        <apex:pageBlockTable value="{!routeGroup.routes}" var="route">
+          <apex:column headerValue="Key" value="{!route.key}" width="15%" />
+          <apex:column headerValue="Input" value="{!route.input}" width="35%" />
+          <apex:column
+            headerValue="Description"
+            value="{!route.usage}"
+            width="50%"
+          />
+        </apex:pageBlockTable>
+      </apex:pageBlock>
+    </apex:repeat>
   </apex:form>
 </apex:page>

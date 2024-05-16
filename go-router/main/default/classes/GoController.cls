@@ -47,19 +47,30 @@ public with sharing class GoController {
    * @description Used by VF Page to render all routes. Filters out routers
    * by Custom_Permission__c if it is specified in metadata.
    */
-  public Route[] routes {
+  public RouteGroup[] routes {
     get {
-      List<Route> routes = new List<Route>();
+      List<RouteGroup> groups = new List<RouteGroup>();
       Go_Router__mdt[] routers = selector.getAllRouters();
+      String curr = null;
+      RouteGroup routeGroup = new RouteGroup('Routes');
+      groups.add(routeGroup);
       for (Go_Router__mdt router : routers) {
         if (
           router.Custom_Permission__c == null ||
           selector.hasCustomPermission(router.Custom_Permission__c)
         ) {
-          routes.add(new Route(router));
+          if (curr != router.Group__c) {
+            curr = router.Group__c;
+            routeGroup = new RouteGroup(router.Group__c);
+            groups.add(routeGroup);
+          }
+          routeGroup.add(new Route(router));
         }
       }
-      return routes;
+      if (groups.get(0).routes.isEmpty()) {
+        groups.remove(0);
+      }
+      return groups;
     }
     private set;
   }
@@ -236,6 +247,25 @@ public with sharing class GoController {
     selector.insertLog(log);
   }
 
+    /*
+   * @description Wrapper class for Go_Router__mdt. Used by the VF Page to
+   * easily render available routes to the user.
+   */
+  public class RouteGroup {
+    public String name { get; set; }
+    public List<Route> routes { get; set; }
+
+    public RouteGroup(String name) {
+      this.name = name;
+      this.routes = new List<Route>();
+    }
+
+    public void add(Route route) {
+      routes.add(route);
+    }
+  }
+
+
   /*
    * @description Wrapper class for Go_Router__mdt. Used by the VF Page to
    * easily render available routes to the user.
@@ -262,9 +292,9 @@ public with sharing class GoController {
 
     public virtual Go_Router__mdt[] getAllRouters() {
       return [
-        SELECT Custom_Permission__c, Input__c, Key__c, Usage__c
+        SELECT Custom_Permission__c, Group__c, Input__c, Key__c, Usage__c
         FROM Go_Router__mdt
-        ORDER BY Key__c
+        ORDER BY Group__c, Key__c NULLS FIRST
       ];
     }
 

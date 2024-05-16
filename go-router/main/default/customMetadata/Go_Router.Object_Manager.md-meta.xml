@@ -15,6 +15,10 @@
         <value xsi:nil="true"/>
     </values>
     <values>
+        <field>Group__c</field>
+        <value xsi:type="xsd:string">Admin Routes</value>
+    </values>
+    <values>
         <field>Input__c</field>
         <value xsi:type="xsd:string">Object | Object.Field</value>
     </values>

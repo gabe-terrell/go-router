@@ -6,6 +6,7 @@
     <columns>Input__c</columns>
     <columns>Redirect_Path__c</columns>
     <columns>Redirect_Path_With_Param__c</columns>
+    <columns>Group__c</columns>
     <columns>Custom_Permission__c</columns>
     <filterScope>Everything</filterScope>
     <filters>

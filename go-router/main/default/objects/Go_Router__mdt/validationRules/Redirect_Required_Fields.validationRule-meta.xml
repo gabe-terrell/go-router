@@ -4,7 +4,7 @@
     <active>true</active>
     <description>Enforce fields for Redirect Type Routers</description>
     <errorConditionFormula>AND(
-  ISPICKVAL(Type__c, &#39;Redirect&#39;),
+  ISPICKVAL(Type__c, &apos;Redirect&apos;),
   ISBLANK(Redirect_Path__c)
 )</errorConditionFormula>
     <errorMessage>Redirect Routers must supply a redirect path.</errorMessage>

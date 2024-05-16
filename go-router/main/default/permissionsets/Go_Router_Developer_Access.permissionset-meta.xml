@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Go_Router_Admin_Route_Access</name>
+    </customPermissions>
+    <description>Grants access to developer-specific routes</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Go Router - Admin/Developer Access</label>
+    <pageAccesses>
+        <apexPage>go</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <tabSettings>
+        <tab>go</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>

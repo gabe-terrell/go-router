@@ -1,0 +1,21 @@
+{
+  "packageDirectories": [
+    {
+      "path": "go-router",
+      "package": "Go Router",
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "default": true,
+      "versionDescription": ""
+    }
+  ],
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "59.0",
+  "packageAliases": {
+    "Go Router": "0Hoaj00000006GjCAI",
+    "Go Router@0.1.0-1": "04taj0000001INtAAM",
+    "Go Router@0.1.0-2": "04taj0000001IR7AAM",
+    "Go Router@0.1.0-3": "04taj0000001L8rAAE"
+  }
+}

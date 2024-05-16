@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provides basic access to Go Router</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Go Router - Basic Access</label>
+    <pageAccesses>
+        <apexPage>go</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <tabSettings>
+        <tab>go</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>

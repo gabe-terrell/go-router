@@ -6,6 +6,7 @@
     <columns>Input__c</columns>
     <columns>Usage__c</columns>
     <columns>Apex_Class__c</columns>
+    <columns>Group__c</columns>
     <columns>Custom_Permission__c</columns>
     <filterScope>Everything</filterScope>
     <filters>

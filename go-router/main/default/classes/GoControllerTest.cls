@@ -36,14 +36,22 @@ private without sharing class GoControllerTest {
   @IsTest
   private static void routesShouldFetchAndReturnSerializedRoutes() {
     Go_Router__mdt router = new Go_Router__mdt(
+      Group__c = 'group',
       Key__c = 'key',
       Input__c = 'input',
       Usage__c = 'usage'
     );
     allRouters.add(router);
 
-    GoController.Route[] routes = objectUnderTest.routes;
+    GoController.RouteGroup[] groups = objectUnderTest.routes;
 
+    System.assertEquals(1, groups.size(), 'Expected to get one group');
+    GoController.RouteGroup routeGroup = groups.get(0);
+    GoController.Route[] routes = routeGroup.routes;
+    System.assertEquals(
+      router.Group__c,
+      routeGroup.name,
+      'Expected group name to match that of the router');
     System.assertEquals(1, routes.size(), 'Expected to get one route');
     System.assertEquals(
       router.Key__c,
@@ -59,6 +67,41 @@ private without sharing class GoControllerTest {
       router.Usage__c,
       routes[0].usage,
       'Expected route to properly store the usage'
+    );
+  }
+
+  /**
+   * @description Check that routers are properly converted and returned to VF page.
+   */
+  @IsTest
+  private static void routesShouldFetchAndReturnSerializedRoutesSplitByGroup() {
+    Go_Router__mdt router = new Go_Router__mdt(
+      Key__c = 'key',
+      Input__c = 'input',
+      Usage__c = 'usage'
+    );
+    Go_Router__mdt groupedRouter = new Go_Router__mdt(
+      Group__c = 'Custom Group',
+      Key__c = 'k2',
+      Input__c = 'i2',
+      Usage__c = 'usage'
+    );
+    allRouters.add(router);
+    allRouters.add(groupedRouter);
+
+
+    GoController.RouteGroup[] groups = objectUnderTest.routes;
+
+    System.assertEquals(2, groups.size(), 'Expected to get two group');
+    System.assertEquals(
+      'Routes',
+      groups[0].name,
+      'Expected null group to pickup default name'
+    );
+    System.assertEquals(
+      groupedRouter.Group__c,
+      groups[1].name,
+      'Expected named group to inherit name'
     );
   }
 

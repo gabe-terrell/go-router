@@ -55,7 +55,8 @@ route. Quickly access all self-accessible routes using the `help` route:
 
 [Unlocked Package Installation (Sandbox)](https://test.salesforce.com/packaging/installPackage.apexp?p0=04taj0000001LC5AAM)
 
-> [!WARNING] When installing the package, there is a custom permission,
+> [!WARNING]
+> When installing the package, there is a custom permission,
 > `Go_Router_Admin_Route_Access`, that may be auto-assigned to profiles that the
 > package is installed for. This custom permission grants access to
 > admin-specific routes such as Developer Console or Profile search. As such, it

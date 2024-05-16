@@ -20,7 +20,7 @@
     </values>
     <values>
         <field>Input__c</field>
-        <value xsi:type="xsd:string">Name (Full or Partial)</value>
+        <value xsi:type="xsd:string">Name</value>
     </values>
     <values>
         <field>Is_Default_Router__c</field>

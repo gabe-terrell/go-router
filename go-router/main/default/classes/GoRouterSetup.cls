@@ -175,6 +175,40 @@ public without sharing class GoRouterSetup extends GoRouter {
   }
 
   /*
+  * @description Used by VF page to retrieve all valid pages that can be routed to
+  and the inputs that lead to them. Constructs this list one and stores it as
+  allInputs, which future calls will then return directly.
+  * @return Map of String input to String combined list of valid shortcuts.
+  */
+  public Map<String, String> getAllInputs {
+    get {
+      if (allInputs == null) {
+        allInputs = new Map<String, String>();
+        for (String shortcut : SHORTCUTS.keySet()) {
+          if (shortcut == '') {
+            continue;
+          }
+          String value = SHORTCUTS.get(shortcut);
+          if (allInputs.containsKey(value)) {
+            allInputs.put(value, allInputs.get(value) + ', ' + shortcut);
+          } else {
+            allInputs.put(value, shortcut);
+          }
+        }
+      }
+      return allInputs;
+    }
+    private set;
+  }
+
+  /*
+  * @description Stores all valid pages that can be routed to
+  and the inputs that lead to them. It is constructed once in the 
+  getAllInputs property.
+  */
+  private Map<String, String> allInputs;
+
+  /*
    * @description Helper method to return the proper route.
    * @param param - String the key to the route.
    * @return String the relative URL to route to.

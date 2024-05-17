@@ -18,11 +18,9 @@
         <apex:pageBlockTable value="{!routeGroup.routes}" var="route">
           <apex:column headerValue="Key" value="{!route.key}" width="15%" />
           <apex:column headerValue="Input" value="{!route.input}" width="35%" />
-          <apex:column
-            headerValue="Description"
-            value="{!route.usage}"
-            width="50%"
-          />
+          <apex:column headerValue="Description" width="50%" >
+            <apex:outputText value="{!route.usage}" escape="false"/>
+          </apex:column>
         </apex:pageBlockTable>
       </apex:pageBlock>
     </apex:repeat>

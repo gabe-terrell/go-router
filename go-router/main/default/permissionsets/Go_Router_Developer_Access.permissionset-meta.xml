@@ -12,11 +12,15 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
-        <apexPage>go-setup</apexPage>
+        <apexPage>go_setup</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <tabSettings>
         <tab>go</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>go_setup</tab>
         <visibility>Visible</visibility>
     </tabSettings>
 </PermissionSet>

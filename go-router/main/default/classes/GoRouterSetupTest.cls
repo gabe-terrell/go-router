@@ -50,7 +50,7 @@ private without sharing class GoRouterSetupTest {
     System.assertNotEquals(
       initialInputs.size(),
       0,
-      'Expected Setup Inputs to be loaded'
+      'Expected setup inputs to be loaded'
     );
     Map<String, String> regotInputs = ROUTER.getAllInputs;
     System.assertEquals(

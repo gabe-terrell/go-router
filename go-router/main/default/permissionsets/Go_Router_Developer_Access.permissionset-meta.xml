@@ -11,6 +11,10 @@
         <apexPage>go</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
+    <pageAccesses>
+        <apexPage>go-setup</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
     <tabSettings>
         <tab>go</tab>
         <visibility>Visible</visibility>

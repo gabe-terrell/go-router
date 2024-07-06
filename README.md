@@ -51,9 +51,9 @@ route. Quickly access all self-accessible routes using the `help` route:
   <img src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png" alt="Deploy to Salesforce" />
 </a>
 
-[Unlocked Package Installation (Production)](https://login.salesforce.com/packaging/installPackage.apexp?p0=04taj0000001LC5AAM)
+[Unlocked Package Installation (Production)](https://login.salesforce.com/packaging/installPackage.apexp?p0=04taj00000021rFAAQ)
 
-[Unlocked Package Installation (Sandbox)](https://test.salesforce.com/packaging/installPackage.apexp?p0=04taj0000001LC5AAM)
+[Unlocked Package Installation (Sandbox)](https://test.salesforce.com/packaging/installPackage.apexp?p0=04taj00000021rFAAQ)
 
 > [!WARNING]
 > When installing the package, there is a custom permission,

@@ -1,0 +1,16 @@
+<apex:page
+  controller="GoRouterSetup"
+  title="Go Setup"
+  lightningStylesheets="true"
+>
+  <apex:form>
+    <apex:pageBlock title="Setup Routes">
+      <apex:pageBlockTable value="{!allInputs}" var="shortcut">
+        <apex:column headerValue="Page Name" width="50%" >
+          <apex:outputLink value="{!'/lightning/setup/' + shortcut + '/home'}">{!shortcut}</apex:outputLink>
+        </apex:column>
+        <apex:column headerValue="Shortcuts" value="{!allInputs[shortcut]}" width="50%" />
+      </apex:pageBlockTable>
+    </apex:pageBlock>
+  </apex:form>
+</apex:page>

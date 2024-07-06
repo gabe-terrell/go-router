@@ -60,6 +60,6 @@
     </values>
     <values>
         <field>Usage__c</field>
-        <value xsi:type="xsd:string">Quick navigation to various Setup pages</value>
+        <value xsi:type="xsd:string">&lt;a href="/lightning/n/go_setup"&gt;Quick navigation to various Setup pages&lt;/a&gt;</value>
     </values>
 </CustomMetadata>

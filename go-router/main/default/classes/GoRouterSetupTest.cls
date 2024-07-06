@@ -18,7 +18,7 @@
  */
 @IsTest(isParallel=true)
 private without sharing class GoRouterSetupTest {
-  private static final GoRouter ROUTER = new GoRouterSetup();
+  private static final GoRouterSetup ROUTER = new GoRouterSetup();
 
   /*
    * @description Test routing logic for different types of key input.
@@ -38,6 +38,25 @@ private without sharing class GoRouterSetupTest {
       pluralRoute,
       nonPluralRoute,
       'Expected synonymous routes to be identical'
+    );
+  }
+
+  /*
+   * @description Test the Setup Help page allInputs() initial creation and further get
+   */
+  @IsTest
+  private static void getAllInputsSuccessfullyLoads() {
+    Map<String, String> initialInputs = ROUTER.allInputs;
+    System.assertNotEquals(
+      initialInputs.size(),
+      0,
+      'Expected setup inputs to be loaded'
+    );
+    Map<String, String> regotInputs = ROUTER.allInputs;
+    System.assertEquals(
+      regotInputs,
+      initialInputs,
+      'Expected second allInputs to match first one'
     );
   }
 }

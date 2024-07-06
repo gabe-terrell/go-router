@@ -5,11 +5,11 @@
 >
   <apex:form>
     <apex:pageBlock title="Setup Routes">
-      <apex:pageBlockTable value="{!getAllInputs}" var="shortcut">
+      <apex:pageBlockTable value="{!allInputs}" var="shortcut">
         <apex:column headerValue="Page Name" width="50%" >
           <apex:outputLink value="{!'/lightning/setup/' + shortcut + '/home'}">{!shortcut}</apex:outputLink>
         </apex:column>
-        <apex:column headerValue="Shortcuts" value="{!getAllInputs[shortcut]}" width="50%" />
+        <apex:column headerValue="Shortcuts" value="{!allInputs[shortcut]}" width="50%" />
       </apex:pageBlockTable>
     </apex:pageBlock>
   </apex:form>

@@ -176,11 +176,11 @@ public without sharing class GoRouterSetup extends GoRouter {
 
   /*
   * @description Used by VF page to retrieve all valid pages that can be routed to
-  * and the inputs that lead to them. Constructs this list one and stores it as
-  * allInputs, which future calls will then return directly.
+  * and the inputs that lead to them. Constructs this list one and stores it,
+  * which future calls will then return directly.
   * @return Map of String input to String combined list of valid shortcuts.
   */
-  public Map<String, String> getAllInputs {
+  public Map<String, String> allInputs {
     get {
       if (allInputs == null) {
         allInputs = new Map<String, String>();

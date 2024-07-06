@@ -42,21 +42,21 @@ private without sharing class GoRouterSetupTest {
   }
 
   /*
-   * @description Test the Setup Help page getAllInputs() initial creation and further get
+   * @description Test the Setup Help page allInputs() initial creation and further get
    */
   @IsTest
   private static void getAllInputsSuccessfullyLoads() {
-    Map<String, String> initialInputs = ROUTER.getAllInputs;
+    Map<String, String> initialInputs = ROUTER.allInputs;
     System.assertNotEquals(
       initialInputs.size(),
       0,
       'Expected setup inputs to be loaded'
     );
-    Map<String, String> regotInputs = ROUTER.getAllInputs;
+    Map<String, String> regotInputs = ROUTER.allInputs;
     System.assertEquals(
       regotInputs,
       initialInputs,
-      'Expected second getAllInputs to match first one'
+      'Expected second allInputs to match first one'
     );
   }
 }

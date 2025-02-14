@@ -250,9 +250,3 @@ on the proper page!
 ![Send GoRouter an SFDC ID](docs/images/route_by_id.png)
 
 ![Successful Route](docs/images/deploy_page.png)
-
-## Notes
-
-This is not an officially supported Google product. This project is not
-eligible for the [Google Open Source Software Vulnerability Rewards
-Program](https://bughunters.google.com/open-source-security).
